@@ -1,0 +1,11 @@
+.container_navHeader_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container_navHeader_header img {
+    width: 40px;
+
+}

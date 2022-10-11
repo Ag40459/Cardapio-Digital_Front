@@ -1,0 +1,48 @@
+.container_cards {
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.container_cards_purchase img {
+    width: 9rem;
+    height: 8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container_cards_purchase {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2rem;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.container_cards_purchase h1 {
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container_cards_purchase span {
+    margin-top: 0.5rem;
+}
+
+.container_cards h2 {
+    margin: 0;
+    font-family: 'Cormorant', serif;
+    font-weight: 400px;
+    font-size: 2rem;
+}
+
+.container_cards strong {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400px;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
