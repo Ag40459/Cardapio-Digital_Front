@@ -1,0 +1,31 @@
+.container_register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container_register_button {
+    display: flex;
+    width: 90%;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.container_register form {
+    padding-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    background-color: #fff;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.container_register form span {
+    margin-top: 3rem;
+}

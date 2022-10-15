@@ -1,11 +1,25 @@
-.container_navHeader_header {
+.container_header {
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    position: absolute;
+    background-color: rgb(110, 30, 148);
+    height: 5rem;
+    max-width: 100vw;
+    z-index: 1;
+    color: #fff;
 }
 
-.container_navHeader_header img {
-    width: 40px;
+.container_header_title {
+    margin-left: 1rem;
+}
 
+.container_header_avatar strong {
+    font-size: 0.7rem;
+}
+
+.container_header_avatar {
+    display: flex;
+    align-items: center;
 }

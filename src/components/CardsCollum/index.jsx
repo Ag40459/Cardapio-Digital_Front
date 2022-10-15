@@ -2,7 +2,7 @@ import { CustomButton } from './styled';
 import './style.css';
 import UseUser from '../../hooks/useUser';
 
-export default function Cards() {
+export default function CardsCollum() {
     const { openModal, setOpenModal, listProductModal, setProductSelect } = UseUser()
     function handleSelectProduct(product) {
         setOpenModal(!openModal);
@@ -12,16 +12,14 @@ export default function Cards() {
         <>
             {listProductModal.map((product) => {
                 return (
-                    <div
+                    <div className='container_cardsCollum_purchase'
                         key={product.id}
-                        onClick={() => handleSelectProduct(product)}
-                        className='container_cards_purchase'
-                    >
-                        <div className='container_cards_purchase_img'>
+                        onClick={() => handleSelectProduct(product)}>
+                        <div className='container_cardsCollum_purchase_img'>
                             <img
                                 src={product.img} />
                         </div>
-                        <div className='container_cards_purchase_details'>
+                        <div className='container_cardsCollum_purchase_details'>
                             <h1>{product.title}</h1>
                             <p>{product.description}</p>
                             <span>R$ {((product.value).toFixed(2))}</span>

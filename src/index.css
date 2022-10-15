@@ -18,8 +18,9 @@ body {
 }
 
 #root {
-    min-height: 100vh;
-    background-image: url('https://i.pinimg.com/originals/3f/8c/72/3f8c72eba5a634d1d15e2f27f2fa6e64.jpg');
+    max-height: 100vh;
+    /* background-image: url('https://i.pinimg.com/originals/3f/8c/72/3f8c72eba5a634d1d15e2f27f2fa6e64.jpg'); */
+    background-color: rgb(110, 30, 148);
     background-repeat: no-repeat;
     background-size: cover;
 }

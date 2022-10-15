@@ -16,7 +16,7 @@ import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import UseUser from '../../hooks/useUser';
-
+import { useEffect, useState } from 'react'
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -31,16 +31,16 @@ const ExpandMore = styled((props) => {
 
 export default function ModalCard() {
     const { setOpenModal, openModal, productSelect, setTopPosition, topPosition } = UseUser()
-    React.useEffect(() => {
+    useEffect(() => {
         setTopPosition(document.documentElement.scrollTop);
     }, [openModal])
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         document.querySelector("body").style.overflowY = 'hidden';
 
         return () => {
@@ -73,7 +73,7 @@ export default function ModalCard() {
                 // subheader="September 14, 2016"
                 />
                 <CardMedia
-                    sx={{ height: '35rem' }}
+                    sx={{ backgroundSize: 'cover', border: 'solid 1px black', width: '100%' }}
                     component="img"
                     height="194"
                     image={productSelect.img}
