@@ -12,11 +12,11 @@ export default function Header() {
                     <MoreVertIcon />
                 </div>
 
-                <div className='container_header_title'>Título</div>
+                <div className='container_header_title'>Cardápio Digital</div>
 
                 <div className='container_header_avatar'>
                     <CustonMenu />
-                    <strong>Nome</strong>
+                    <strong>Agenor TorresAgenor Torres</strong>
                 </div>
             </div>
             <div className='contente-page'>

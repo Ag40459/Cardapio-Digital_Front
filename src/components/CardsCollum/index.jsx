@@ -1,6 +1,5 @@
-import { CustomButton } from './styled';
-import './style.css';
 import UseUser from '../../hooks/useUser';
+import './style.css';
 
 export default function CardsCollum() {
     const { openModal, setOpenModal, listProductModal, setProductSelect } = UseUser()
@@ -20,9 +19,11 @@ export default function CardsCollum() {
                                 src={product.img} />
                         </div>
                         <div className='container_cardsCollum_purchase_details'>
-                            <h1>{product.title}</h1>
-                            <p>{product.description}</p>
-                            <span>R$ {((product.value).toFixed(2))}</span>
+                            <p>{product.title}</p>
+                        </div>
+                        <div className='container_cardsCollum_purchase_price'>
+                            <strong>R$ {((product.value).toFixed(2))}</strong>
+                            <span>R$ {(((product.value) * 0.8).toFixed(2))}</span>
                         </div>
 
                     </div>
