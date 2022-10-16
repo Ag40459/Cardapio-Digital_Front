@@ -103,7 +103,7 @@ export default function SigIn() {
                         color="error"
                         onClick={() => handleClear()}
                     >
-                        Cancelar
+                        Limpar
                     </Button>
                     <Button
                         type='submit'

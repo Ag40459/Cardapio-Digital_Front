@@ -9,6 +9,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Tooltip from '@mui/material/Tooltip';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import profile from '../../assets/profile.png';
 import './style.css';
 
@@ -21,6 +22,10 @@ export default function MenuHeader() {
     const handleClose = () => {
         setAnchorEl(null);
     };
+    const handleExit = () => {
+        console.log('teste');
+        return <Link to="/">Login</Link>
+    }
     return (
         <>
             <Tooltip title="Account settings">
@@ -90,14 +95,18 @@ export default function MenuHeader() {
                     </ListItemIcon>
                     Adicionar Conta
                 </MenuItem>
-                <MenuItem>
+                <MenuItem
+                >
                     <ListItemIcon>
                         <Settings fontSize="small" />
                     </ListItemIcon>
                     Configurações
                 </MenuItem>
-                <MenuItem>
-                    <ListItemIcon>
+                <MenuItem
+                    onClick={() => handleExit()}
+                >
+                    <ListItemIcon
+                    >
                         <Logout fontSize="small" />
                     </ListItemIcon>
                     Sair

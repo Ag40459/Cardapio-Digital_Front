@@ -5,5 +5,3 @@ export default axios.create({
     timeout: 10000,
     headers: { 'Content-Type': 'application/json' }
 });
-
-// baseURL: 'https://api.ninacai.com.br/',

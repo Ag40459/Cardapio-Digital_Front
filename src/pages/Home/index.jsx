@@ -6,6 +6,8 @@ import UseUser from '../../hooks/useUser';
 import './style.css';
 
 export default function Home() {
+
+
   const { openModal } = UseUser()
 
   return (

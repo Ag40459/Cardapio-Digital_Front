@@ -135,7 +135,7 @@ export default function Register() {
                         color="error"
                         onClick={() => handleClear()}
                     >
-                        Cancelar
+                        Limpar
                     </Button>
                     <Button
                         type='submit'
