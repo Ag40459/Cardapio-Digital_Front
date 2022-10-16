@@ -147,7 +147,7 @@ export default function Register() {
                     </Button>
 
                 </div>
-                <span>Já tenho cadastro, <a href=''>clique aqui!</a></span>
+                <span>Já tenho cadastro, <a href='/signIn'>clique aqui!</a></span>
                 <a href="/">Sair</a>
             </form>
         </div>

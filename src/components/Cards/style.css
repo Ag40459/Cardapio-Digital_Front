@@ -5,7 +5,7 @@
     width: 100vw;
     margin-top: 2rem;
     align-items: center;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .container_cards {
@@ -26,40 +26,39 @@
     margin-bottom: 0.5rem;
 }
 
+.container_cards_purchase_details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    height: 7rem;
+    width: 70%;
+    margin-left: 0.8rem;
+}
 
 .container_cards_purchase_details h1 {
-    overflow: hidden;
+    position: absolute;
+    top: -10px;
     width: 100%;
+    overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
 
 .container_cards_purchase_details p {
     overflow: hidden;
+    margin-top: 1.5rem;
+    height: 30px;
+    font-size: 1.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .container_cards_purchase_details span {
+    position: absolute;
     margin-top: 0.5rem;
-}
-
-.container_cards h2 {
-    margin: 0;
-    font-family: 'Cormorant', serif;
-    font-weight: 400px;
-    font-size: 2rem;
-
-}
-
-.container_cards strong {
-    font-family: 'Satisfy', cursive;
-    font-weight: 400px;
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
-}
-
-.container_cards_purchase_details {
-    height: 95%;
-    width: 70%;
+    bottom: 0;
+    font-size: 1.3rem;
+    /* color: rgb(13, 245, 13); */
 }

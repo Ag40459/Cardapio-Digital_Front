@@ -1,4 +1,5 @@
 .container_header {
+    position: relative;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -11,13 +12,20 @@
     color: #fff;
 }
 
+.container_header_menu {
+    position: absolute;
+
+}
+
 .container_header_title {
-    margin-left: 5rem;
+    position: absolute;
+    left: -3rem;
+    width: 100%;
 }
 
 .container_header_avatar {
-    width: 35%;
-    right: 0;
+    position: absolute;
+    right: 2rem;
     display: flex;
     align-items: center;
 }

@@ -16,7 +16,7 @@ export default function Header() {
 
                 <div className='container_header_avatar'>
                     <CustonMenu />
-                    <strong>Agenor TorresAgenor Torres</strong>
+                    <strong>Agenor Torres</strong>
                 </div>
             </div>
             <div className='contente-page'>

@@ -1,5 +1,3 @@
-import './style.css'
-import Close from '../../assets/close.png'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
@@ -15,8 +13,10 @@ import IconButton from '@mui/material/IconButton';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
+import { useEffect, useState } from 'react';
+import Close from '../../assets/close.png';
 import UseUser from '../../hooks/useUser';
-import { useEffect, useState } from 'react'
+import './style.css';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -54,11 +54,6 @@ export default function ModalCard() {
             className='container_modalCard'>
             <Card sx={{ width: '95%', height: '95%' }}>
                 <CardHeader
-                    avatar={
-                        <Avatar sx={{ bgcolor: red[100] }} aria-label="recipe">
-                            R
-                        </Avatar>
-                    }
                     action={
                         <IconButton
                             onClick={() => setOpenModal(!openModal)}
@@ -69,46 +64,30 @@ export default function ModalCard() {
                         </IconButton>
                     }
                     title={productSelect.title}
-
                 // subheader="September 14, 2016"
                 />
                 <CardMedia
                     sx={{ backgroundSize: 'cover', border: 'solid 1px black', width: '100%' }}
                     component="img"
-                    height="194"
+                    height="300"
                     image={productSelect.img}
                     alt="Prato Selecionado"
                 />
                 <CardContent>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography
+                        sx={{ fontSize: '1.6rem' }}
+                        variant="body2"
+                        color="text.secondary">
                         {productSelect.description}
-                    </Typography>
+                    </Typography> */}
                 </CardContent>
-                <CardActions disableSpacing>
-                    <IconButton aria-label="add to favorites">
-                        <FavoriteIcon />
-                    </IconButton>
-                    <IconButton aria-label="share">
-                        <ShareIcon />
-                    </IconButton>
-                    <ExpandMore
-                        expand={expanded}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
-                        aria-label="show more"
+                <div className='container_modalCard_description'>
+                    {productSelect.description}
+                </div>
+                <div className='container_modalCard_botton'>
+                    <button
 
-                    >
-                        <ExpandMoreIcon />
-                    </ExpandMore>
-                </CardActions>
-                <Collapse in={expanded} timeout="auto" unmountOnExit>
-                    <CardContent>
-                        {/* {productSelect.itens} */}
-                    </CardContent>
-                </Collapse>
-                {productSelect.itens}
-                <div>
-                    R$ {(productSelect.value).toFixed(2)}
+                    >Adicionar R$ {(productSelect.value).toFixed(2)}</button>
                 </div>
             </Card>
         </div>

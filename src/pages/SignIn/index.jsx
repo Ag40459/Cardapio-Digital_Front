@@ -115,7 +115,7 @@ export default function SigIn() {
                     </Button>
 
                 </div>
-                <span>Ainda não tem cadastro, <a href='/sing-up'>clique aqui!</a></span>
+                <span>Ainda não tem cadastro, <a href='/singUp'>clique aqui!</a></span>
                 <Link to="/">Sair</Link>
             </form>
         </div>

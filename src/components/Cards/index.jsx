@@ -1,6 +1,5 @@
-import { CustomButton } from './styled';
-import './style.css';
 import UseUser from '../../hooks/useUser';
+import './style.css';
 
 export default function Cards() {
     const { openModal, setOpenModal, listProductModal, setProductSelect } = UseUser()

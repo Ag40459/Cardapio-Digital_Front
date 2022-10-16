@@ -11,6 +11,7 @@ function useUseProvider() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
+    // const [array]
 
 
 

@@ -21,7 +21,7 @@ export default function MainRoutes() {
         </Route>
         {/* </Route> */}
         {/* <Route path='/signIn' element={<Header />}> */}
-        <Route path='' element={<SignIn />} />
+        <Route path='/signIn' element={<SignIn />} />
         <Route path='/signUp' element={<SignUp />} />
 
         <Route element={<RoutesProtection redirectTo={'/'} />}>

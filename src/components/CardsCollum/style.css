@@ -45,7 +45,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 2.3rem;
-    /* border: 2px solid red */
 }
 
 .container_cardsCollum_purchase_details p {
@@ -61,7 +60,7 @@
 }
 
 .container_cardsCollum_purchase_price strong {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: rgb(13, 245, 13);
 }
 
